@@ -12,4 +12,4 @@ print(df[['nội dung', 'SoLuongTu']])
 
 # Lưu kết quả ra tệp Excel mới nếu cần
 df.to_excel('ket_qua_thong_ke.xlsx', index=False)
-#
+##
