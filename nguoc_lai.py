@@ -36,7 +36,48 @@ def swap_phrases_in_column_b(file_path, sheet_name):
         "chậm": "t_nhanh",
         "dày": "t_mong",
         "mỏng": "t_day",
-        
+        "giỏi": "t_dot",
+        "dốt": "t_gioi",
+        "hay": "t_do",
+        "dở": "t_hay",
+        "đắt": "t_re",
+        "rẻ": "t_dat",
+        "vui": "t_buon",
+        "buồn": "t_vui",
+        "đẹp": "t_xau",
+        "xấu": "t_dep",
+        "lười": "t_sieng",
+        "siêng": "t_luoi",
+        "lớn": "t_nho",
+        "nhỏ": "t_lon",
+        "kém": "t_kha",
+        "khá": "t_kem",
+        "khoẻ": "t_yeu",
+        "yếu": "t_khoe",
+        "ồn_ào": "t_im_lang",
+        "im_lặng": "t_on_ao",
+        "ồn": "t_im",
+        "im": "t_on",
+        "xui_xẻo": "t_may_man",
+        "may_mắn": "t_xui_xeo",
+        "nắng": "t_mua",
+        "mưa": "t_nang",
+        "hên": "_xui",
+        "xui": "_hen",
+        "quên": "_nho",
+        "nhớ": "_quen",
+        "đông":"_vang",
+        "vắng":"_dong",
+        "buổi_sáng":"_buoi_toi",
+        "buổi_tối":"_buoi_sang",
+        "này":"_kia",
+        "kia": "_nay",
+        "hoàn_thành":"_do_dang",
+        "dở_dang":"_hoan_thanh",
+        "quen":"_la",
+        "lạ":"_quen",
+        "thích":"_chan",
+        "chán":"_thich"
     }
 
     # Định nghĩa các từ tạm thời chuyển thành giá trị cuối cùng
@@ -68,8 +109,49 @@ def swap_phrases_in_column_b(file_path, sheet_name):
         "t_nhanh": "nhanh",
         "t_cham": "chậm",
         "t_mong": "mỏng",
-        "t_day": "dày"
-        
+        "t_day": "dày",
+        "t_gioi": "giỏi",
+        "t_dot": "dốt",
+        "t_hay": "hay",
+        "t_do": "dở",
+        "t_dat": "đắt",
+        "t_re": "rẻ",
+        "t_vui": "vui",
+        "t_buon": "buồn",
+        "t_dep": "đẹp",
+        "t_xau": "xấu",
+        "t_luoi": "lười",
+        "t_sieng": "siêng",
+        "t_lon": "lớn",
+        "t_nho": "nhỏ",
+        "t_kha": "khá",
+        "t_kem": "kém",
+        "t_khoe": "khoẻ",
+        "t_yeu": "yếu",
+        "t_on_ao": "ồn ào",
+        "t_im_lang": "im lặng",
+        "t_on": "ồn",
+        "t_im": "im",
+        "t_xui_xeo": "xui xẻo",
+        "t_may_man": "may mắn",
+        "t_nang": "nắng",
+        "t_mua": "mưa",
+        "_hen": "hên",
+        "_xui": "xui",
+        "_nho":"nhớ",
+        "_quen":"quên",
+        "_dong":"đông",
+        "_vang":"vắng",
+        "_buoi_toi":"buổi tối",
+        "_buoi_sang": "buổi sáng",
+        "_nay":"này",
+        "_kia":"kia",
+        "_hoan_thanh":"hoàn thành",
+        "_do_dang":"dở dang",
+        "_quen":"quen",
+        "_la":"lạ",
+        "_thich":"thích",
+        "_chan":"chán"
     }
 
     # Định nghĩa hàm chuyển đổi sử dụng biểu thức chính quy
@@ -84,7 +166,7 @@ def swap_phrases_in_column_b(file_path, sheet_name):
 
     # Áp dụng bước 2: Thay thế từ tạm thời bằng từ cuối cùng
     df['ngược lại'] = df['ngược lại'].apply(lambda x: swap_phrase(x, final_dict))
-
+df['không cần']
     # Lưu lại kết quả vào file Excel mới
     new_file_path = file_path.replace('.xlsx', '_modified.xlsx')
     df.to_excel(new_file_path, sheet_name=sheet_name, index=False)
