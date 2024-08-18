@@ -166,7 +166,6 @@ def swap_phrases_in_column_b(file_path, sheet_name):
 
     # Áp dụng bước 2: Thay thế từ tạm thời bằng từ cuối cùng
     df['ngược lại'] = df['ngược lại'].apply(lambda x: swap_phrase(x, final_dict))
-df['không cần']
     # Lưu lại kết quả vào file Excel mới
     new_file_path = file_path.replace('.xlsx', '_modified.xlsx')
     df.to_excel(new_file_path, sheet_name=sheet_name, index=False)
