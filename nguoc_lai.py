@@ -77,7 +77,15 @@ def swap_phrases_in_column_b(file_path, sheet_name):
         "quen":"_la",
         "lạ":"_quen",
         "thích":"_chan",
-        "chán":"_thich"
+        "chán":"_thich",
+        "chưa":"_da",
+        "đã":"_chua",
+        "ở_nhà":"_o_ngoai",
+        "ở_ngoài":"_o_nha",
+        "cũ":"_moi",
+        "mới":"_cu",
+        "trái":"_phai",
+        "phải":"_trái"
     }
 
     # Định nghĩa các từ tạm thời chuyển thành giá trị cuối cùng
@@ -151,7 +159,15 @@ def swap_phrases_in_column_b(file_path, sheet_name):
         "_quen":"quen",
         "_la":"lạ",
         "_thich":"thích",
-        "_chan":"chán"
+        "_chan":"chán",
+        "_chua":"chưa",
+        "_da":"đã",
+        "_o_nha":"ở nhà",
+        "_o_ngoai":"ở ngoài",
+        "_moi":"mới",
+        "_cu":"cũ",
+        "_trai":"trái",
+        "_phai":"phải"
     }
 
     # Định nghĩa hàm chuyển đổi sử dụng biểu thức chính quy
