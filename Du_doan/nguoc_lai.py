@@ -95,7 +95,9 @@ swap_dict = {
     "khái_quát":"_chi_tiet",
     "chi_tiết":"_khai_quat",
     "tắt":"_mo",
-    "mở":"_tat"
+    "mở":"_tat",
+     "liền_mạch":"_ngat_quang",
+     "ngắt_quãng":"_lien_mach"
 }
 
 # Định nghĩa các từ tạm thời chuyển thành giá trị cuối cùng
@@ -157,7 +159,7 @@ final_dict = {
     "_hen": "hên",
     "_xui": "xui",
     "_nho":"nhớ",
-    "_quen":"quen",
+    "_quen":"quên",
     "_dong":"đông",
     "_vang":"vắng",
     "_buoi_toi":"buổi_tối",
@@ -192,7 +194,10 @@ final_dict = {
     "_khai_quat":"khái_quát",
     "_chi_tiet":"chi_tiết",
     "_tat":"tắt",
-    "_mo":"mở"
+    "_mo":"mở",
+    "_lien_mach":"liền mạch",
+    "_ngat_quang":"ngắt quãng"
+ 
 }
 
 def swap_phrases_in_column_b(file_path, sheet_name):
