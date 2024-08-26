@@ -97,7 +97,11 @@ swap_dict = {
     "tắt":"_mo",
     "mở":"_tat",
      "liền_mạch":"_ngat_quang",
-     "ngắt_quãng":"_lien_mach"
+     "ngắt_quãng":"_lien_mach",
+     "đi":"_o",
+     "ở":"_di",
+     "1_mình":"_nhieu_nguoi",
+     "nhiều_người":"_1_minh"
 }
 
 # Định nghĩa các từ tạm thời chuyển thành giá trị cuối cùng
@@ -196,7 +200,12 @@ final_dict = {
     "_tat":"tắt",
     "_mo":"mở",
     "_lien_mach":"liền mạch",
-    "_ngat_quang":"ngắt quãng"
+    "_ngat_quang":"ngắt quãng",
+    "_di":"đi",
+    "_o":"ở",
+    "_1_minh":"một mình",
+    "_nhieu_nguoi":"nhiều người"
+    
  
 }
 
